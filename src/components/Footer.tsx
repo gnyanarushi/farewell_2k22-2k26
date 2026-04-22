@@ -8,13 +8,12 @@ const Footer = () => {
             Here's to the chapter that made us.
           </div>
           <p className="mx-auto mt-3 max-w-xl text-sm font-medium text-[#3c2858] dark:text-violet-200/85">
-            Built with love by the juniors of 2K26, as a keepsake for every
+            Built with love by the juniors of 2K27, as a keepsake for every
             senior who walked these halls before us.
           </p>
           <div className="mt-6 flex flex-wrap items-center justify-center gap-2 text-xs font-medium text-[#5a3d7e] dark:text-violet-300/85">
             <span>© {year} Farewell 2K26 · SASI Institute · IT</span>
             <span className="h-1 w-1 rounded-full bg-[#b195cc] dark:bg-violet-200/60" />
-            <span>Made with React, Vite &amp; Tailwind</span>
           </div>
         </div>
       </div>
