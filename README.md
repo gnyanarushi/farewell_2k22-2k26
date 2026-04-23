@@ -9,8 +9,8 @@ A modern, animated farewell website built for the IT batch using React, TypeScri
 - Animated purple/blue background bubbles across all sections
 - Student gallery with search + lightbox preview
 - Seniors frame section with animated cards and tap-to-view
-- Embedded memory video section with viewport-aware play/pause behavior
-- Feedback carousel and preview cards powered by simple JSON objects in code
+- Memory video plays while the pointer is over the whole video section (pauses when it leaves)
+- Feedback section lists every message in full, driven by `src/data/feedback.ts`
 - Mobile-friendly responsive UI
 
 ## Tech Stack
@@ -80,11 +80,7 @@ Edit `src/data/feedback.ts` and add objects to `seedFeedback`:
 
 ### Update memory video
 
-Edit `src/components/MemoryVideo.tsx` and replace `DRIVE_VIDEO_ID` with your Google Drive file id.
-
-Important:
-- Keep file sharing as "Anyone with the link can view"
-- Some autoplay behavior can vary by browser policy
+Default playback uses YouTube (`DEFAULT_MEMORY_VIDEO_URL` in `src/components/MemoryVideo.tsx`). To change it without editing code, set `VITE_MEMORY_VIDEO_EMBED_URL` (YouTube watch/embed or any iframe URL) or `VITE_MEMORY_VIDEO_FILE` (direct `.mp4` URL). Autoplay may be muted until the viewer interacts, depending on the browser.
 
 ### Update students/seniors photos
 
@@ -93,7 +89,7 @@ Important:
 
 ## Notes
 
-- The video section is configured to start playback when visible and stop when out of view.
+- The video section plays while the cursor is anywhere in that section (including the heading) and stops when it leaves.
 - Theme and animation styling are centralized in `src/index.css`.
 - Navbar links are anchor-based for smooth in-page navigation.
 
