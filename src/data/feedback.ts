@@ -20,7 +20,7 @@ Wishing you all the very best for what's ahead — go out there and do great thi
     message: `Thank you everyone for coordinating well....spcl thanks to hostlers you all worked very hard ....and also  editing ...food and Av are the spcl highlights in farewell...everything went soo smooth jst because of your coordination...❤️final ga andaru kastapadi event ni success cheysaru efforts pettina prati vallaki heartful thanks...🫶🏻❤️✨`,
   },
   {
-    name: 'A senior',
+    name: 'V.Thanuja',
     role: 'Batch 2K22 — 2K26',
     emoji: '💖',
     message: `Thank you so much for your lovely words and for organizing such a beautiful farewell for us 🫶🏻❤️
